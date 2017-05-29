@@ -1,0 +1,27 @@
+.tile {
+  transition: background-color 1s ease-in-out;
+}
+
+.btn {
+  transition: all .25s ease-in-out;
+
+  &:hover {
+    @include shadow;
+    bottom: .1rem;
+    text-decoration: none;
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.modal-overlay {
+  transition: visibility .125s ease-out;
+}

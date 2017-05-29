@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Open+Sans');
+
+$font-body: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+$font-header: 'Arvo', 'Helvetica', 'Arial', sans-serif;
+
+body {
+  font-family: $font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-header;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: $font-header;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}

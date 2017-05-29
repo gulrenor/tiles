@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+  .tile {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tile {
+    width: 32%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tile {
+    width: 24%;
+  }
+}

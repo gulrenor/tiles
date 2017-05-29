@@ -1,0 +1,47 @@
+@import 'palette';
+
+@mixin shadow {
+  box-shadow: 0 1rem .75rem $black-shadow;
+}
+
+.fg-white {
+  color: $white-50;
+  fill: $white-50;
+}
+
+.bg-white {
+  background-color: $white-50;
+}
+
+.fg-black {
+  color: $black-50;
+  fill: $black-50;
+}
+
+.bg-black {
+  background-color: $black-50;
+}
+
+a {
+  color: inherit;
+}
+
+.modal-overlay {
+  background-color: $modal-bg;
+}
+
+.modal-close {
+  background-color: $modal-bg;
+}
+
+.body-image {
+  @include shadow;
+}
+
+hr {
+  background-color: $black-50;
+}
+
+.btn {
+  border-color: $black-50;
+}
