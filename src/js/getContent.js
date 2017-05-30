@@ -17,7 +17,7 @@ function getBodyText(el) {
 }
 
 function getTitleText(el) {
-  var reqUrl = 'http://www.randomtext.me/api/lorem/h2/1-5?seed=123';
+  var reqUrl = 'https://www.randomtext.me/api/lorem/h2/1-5?seed=123';
   var reqObj = {
     method: 'get',
     mode: 'cors',
