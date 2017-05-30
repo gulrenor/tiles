@@ -18,14 +18,10 @@ function getBodyText(el) {
 
 function getTitleText(el) {
   var reqUrl = 'http://www.randomtext.me/api/lorem/h2/1-5?seed=123';
-  var reqHeaders = new Headers({
-    'Content-Type': 'text/plain'
-  })
   var reqObj = {
     method: 'get',
     mode: 'cors',
     cache: 'no-cache',
-    headers: reqHeaders
   };
 
   fetch(reqUrl, reqObj)
@@ -66,9 +62,9 @@ function formatTitle(html) {
   var el = document.createElement('div');
   el.innerHTML = html;
   var text = el.firstChild
-  return text.outerText;
+  return text.textContent;
 }
 
 function formatUrl(url) {
-  return url.replace(/ /g,'+').toLowerCase()
+  return url.replace(/ /g,'+').toLowerCase();
 }
